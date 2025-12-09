@@ -42,18 +42,19 @@
             
             <div class="hero__text">
               <p> <ul>
-                <li>Implemented an
-event-driven Socket-based architecture with a Room & user management system</li>
-                <li>Achieved ~50–100 ms real-time synchronization latency across 5+ concurrent users</li>
+                <li>Designed & Implemented a resource-usage–optimizing dynamic tenant allocation algorithm to distribute tenants across multiple DBs</li>
+                <li>Designed a centralized lookup DB to automate pooled tenant DB (Row-Level Security - RLS
+protected) provisioning, configuration, and scaling, with indexed tenant lookup and inmemory caching of connection URIs to reduce request latency by ~40%</li>
                 
-                <li>Implemented conflict resolution using a Last-Write-Wins (LWW) strategy instead of heavy OT/CRDT algorithms, as implementing a well-working OT system was outside the scope of a personal project.</li>
+                <li>Implemented connection pooling to reduce cold-start overhead from ~90ms to ~4ms</li>
+                <li>Deployed to Neon (serverless) DB to save costs, compared to AWS RDS</li>
+                
 
                 
               </ul></p>
-              <br><br> Below are some screenshots from the app, just for reference: <br> <br>
-              <img src="./assets/images/Screenshot 2024-11-01 164512.png" alt=""><br>
-              <img src="./assets/images/Screenshot 2024-11-01 165547.png" alt=""><br>
-              <img src="./assets/images/Screenshot 2024-11-01 210841.png" alt="">
+              <br>The project doesn't have a frontend and is not open-source</p>
+              <br> Here is the architecture of the project: 
+              <img src="./assets/images/DBArchitecture.png" alt="Architecture Diagram">
               
              <br><br>
             </div>
