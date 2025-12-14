@@ -768,3 +768,15 @@ footer {
   }
 }
 
+.header__home {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__email {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 1;
+}
