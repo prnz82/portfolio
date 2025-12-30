@@ -44,8 +44,8 @@
             <div class="hero__text">
               <p> <ul>
                 <li>Designed & Implemented a resource-usage–optimizing dynamic tenant allocation algorithm to distribute tenants across multiple DBs</li>
-                <li>Designed a centralized lookup DB to automate pooled tenant DB (Row-Level Security - RLS
-protected) provisioning, configuration, and scaling, with indexed tenant lookup and inmemory caching of connection URIs to reduce request latency by ~40%</li>
+                <li>Designed a centralized lookup DB to automate pooled, RLS-protected tenant DB provisioning, benchmarking and tuning serverless DB concurrency via k6 load testing.</li>
+                <li>Implemented indexed lookup and caching of URIs to reduce request latency by ~40%</li>
                 
                 <li>Implemented connection pooling to reduce cold-start overhead from ~90ms to ~4ms</li>
                 <li>Deployed to Neon (serverless) DB to save costs, compared to AWS RDS</li>
